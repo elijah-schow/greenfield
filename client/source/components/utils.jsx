@@ -1,4 +1,7 @@
-// Any function that doesnt directly affect state can go into here.
+/*
+ *Any function that doesnt directly affect state can go into here.
+ */
+ 
 import React from 'react'
 
 // use `number.toFixed(2)` instead of `roundtoTwo(number)`
