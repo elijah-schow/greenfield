@@ -62,6 +62,23 @@ npm install
 
 3. Visit `http://localhost:8080` (or whichever port the server started on).
 
+### Deploy
+
+Follow [this guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps) to configure your deployment server. When you're ready to deplay:
+
+**Run locally:**
+
+1. `git pull --rebase upstream master`
+2. `git push live master`
+
+**Run on your server:**
+
+1. `npm install`
+2. `webpack -p`
+3. `pm2 start server/server.js`
+
+Make sure that you are in the same directory as the application. Also make sure that PM2 is install globally. If not, run: `npm install pm2 -g`
+
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/unexpected-lion/ourglass/blob/master/contributing.md) for contribution guidelines.
